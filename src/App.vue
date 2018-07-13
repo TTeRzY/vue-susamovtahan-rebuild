@@ -1,7 +1,9 @@
 <template>
    <div>
        <app-header></app-header>
-           <router-view></router-view>
+           <transition name="fade">
+               <router-view></router-view>
+           </transition>
        <app-footer></app-footer>
    </div>
 </template>
@@ -18,6 +20,14 @@
 </script>
 
 <style>
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        opacity: 0;
+    }
+
     body{
         font-family: 'Pacifico', cursive;
         background: #67B26F;

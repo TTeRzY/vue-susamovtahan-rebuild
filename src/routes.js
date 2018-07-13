@@ -6,8 +6,6 @@ import Technology from './components/pages/Technology.vue';
 
 
 import Order  from './components/pages/orders/Order.vue';
-import ConfirmOrder  from './components/pages/orders/ConfirmOrder.vue';
-
 import Gallery from './components/pages/Gallery.vue';
 import Gdpr from './components/pages/Gdpr.vue';
 import BrashnoLimets from './components/pages/production/BrashnoLimets.vue';
@@ -28,7 +26,6 @@ export const routes = [
   {path: '/pages/production/susamovo-maslo', component: SusamovoMaslo},
   {path: '/pages/production/pchelen-med', component: PchelenMed},
   {path: '/pages/production/brashno-ot-limets', component: BrashnoLimets},
-  {path: '/pages/pages/orders/', component: Order, children: [
-      {path: '/pages/orders/confirm-order', component: ConfirmOrder}
-    ]}
+  {path: '/pages/orders/order', component: Order}
+
 ];

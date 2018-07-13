@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <router-link to="../pages/orders/">
+                    <router-link to="/pages/orders/order">
                         <a class="nav-link">Поръчай</a>
                     </router-link>
                 </li>
